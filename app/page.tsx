@@ -1,20 +1,27 @@
+import Link from "next/link";
+
 export default function Home() {
     return (
-        <main className="bg-gray-100 sm:bg-red-100 md:bg-green-100 lg:bg-cyan-100 xl:bg-orange-100 2xl:bg-purple-100 h-screen flex items-center justify-center p-5">
-            <div className="bg-white shadow-lg p-5 rounded-3xl w-full max-w-screen-sm flex flex-col md:flex-row gap-2 *:outline-none ring ring-transparent transition-shadow has-[:invalid]:ring-red-100">
-                <input
-                    className="w-full rounded-full h-10 bg-gray-200 pl-5 ring ring-transparent focus:ring-green-500 focus:ring-offset-2 transition-shadow placeholder:drop-shadow invalid:focus:ring-red-500 peer"
-                    type="text"
-                    required
-                    placeholder="Emain address"
-                />
-                <span className="text-red-500 font-medium hidden peer-invalid:block">
-                    Emain is required.
-                </span>
-                <button className="bg-black bg-opacity-50 text-white py-2 rounded-full active:scale-90 transition-transform font-medium md:px-1">
-                    Log in
-                </button>
+        <div className="flex flex-col items-center justify-between min-h-screen p-6">
+            <div className="my-auto flex flex-col items-center gap-2 *:font-medium">
+                <span className="text-9xl">🥕</span>
+                <h1 className="text-4xl">당근</h1>
+                <h2 className="text-2xl">당근 마켓에 어서오세요!</h2>
             </div>
-        </main>
+            <div className="flex flex-col items-center gap-3 w-full">
+                <Link
+                    href="/create-account"
+                    className="primary-btn text-lg py-2.5"
+                >
+                    시작하기
+                </Link>
+                <div className="flex gap-2">
+                    <span>이미 계정이 있나요?</span>
+                    <Link href="/login" className="hover:underline">
+                        로그인
+                    </Link>
+                </div>
+            </div>
+        </div>
     );
 }

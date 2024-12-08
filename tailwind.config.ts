@@ -7,5 +7,5 @@ export default {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {},
-    plugins: [],
+    plugins: [require("@tailwindcss/forms")],
 } satisfies Config;
