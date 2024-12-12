@@ -23,7 +23,7 @@ export default function SocialLogin() {
                     <span>
                         <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6" />
                     </span>
-                    <span>Continue with Github</span>
+                    <span>Continue with SMS</span>
                 </Link>
             </div>
         </>
