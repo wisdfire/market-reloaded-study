@@ -10,6 +10,7 @@ export default function SocialLogin() {
                 <Link
                     className="primary-btn flex h-10 items-center justify-center gap-3"
                     href="/github/start"
+                    prefetch={false}
                 >
                     <span>
                         <FaGithub className="size-6" />
